@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i></a></li>
+            <li><a href="#"><i class="fas fa-image"></i></a></li> <!-- Image -->
+            <li><a href="#"><i class="fas fa-video"></i></a></li> <!-- Video -->
+            <li><a href="#"><i class="fas fa-paint-brush"></i></a></li> <!-- Paint -->
+            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+            <li><a href="#"><i class="fas fa-cog"></i></a></li>
+            <li><a href="#"><i class="fas fa-folder"></i></a></li> <!-- Folder -->
+        </ul>
+
+        <div class="navbar-right">
+            <button class="nav-btn">Gallery</button>
+            <button class="nav-btn">Support</button>
+            <button class="icon-btn"><i class="fas fa-bell"></i></button>
+            <button class="icon-btn" id="toggle-theme"><i class="fas fa-sun"></i></button>
+        </div>
+    </nav><br><br><br><br><br><br><br>
+
+    <!-- ===== CAROUSEL ===== -->
+    <div class="carousel">
+        <div class="carousel-track">
+
+            <!-- Card 1 -->
+            <div class="card wan">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1>WAN 2.2</h1>
+                        <h2>1.2.2 Image Generation</h2>
+                        <p>
+                            Explore Pythagoras theorem with creative prompts. <br> Write your ideas about triangles or proofs
+                            and generate visual illustrations.
+                        </p>
+                        <button class="btn generate-btn">Generate</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card flux">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1>OPEN SOURCE</h1>
+                        <h2>1.2.2 Image Generation</h2>
+                        <p>
+                            Visualize geometric concepts or mathematical ideas. <br> Describe shapes, angles, or theorems to
+                            instantly see them transformed into images.
+                        </p>
+                        <button class="btn generate-btn">Generate</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card other">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1>NEW GEN</h1>
+                        <h2>1.2.2 NEW GEN</h2>
+                        <p>
+                            Create exceptional visual content for maths concepts <br>. Input ideas like Pythagoras problems,
+                            triangle proofs, or applications to generate images.
+                        </p>
+                        <button class="btn generate-btn">Generate</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card rob">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1>NEW GEN</h1>
+                        <h2>1.2.2 NEW GEN</h2>
+                        <p>
+                            Create exceptional visual content for maths concepts. <br> Input ideas like Pythagoras problems,
+                            triangle proofs, or applications to generate images.
+                        </p>
+                        <button class="btn generate-btn">Generate</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+
+
+    <!-- Generate Section -->
+
+    <h1 class="gen">Generate</h2>
+        <div class="generate">
+            <div class="grid">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="modern-camera-broken-logotype_1361-1605.jpg" alt="Image Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Image Generation</h3>
+                            <p>Generate high-quality images <br> from your prompts easily.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="3d-rendered-video-camera-icon-blue-circle_84443-55897.jpg" alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Video Generation</h3>
+                            <p>Create short videos <br> automatically from your prompts.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="black-orange-rocket-launching-startup-success_632498-55932.jpg" alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Real Time</h3>
+                            <p>Instantly generate content and <br> see updates live as you type.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="background-with-arrow-disintegrating_1017-6261.jpg" alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Enhancer</h3>
+                            <p>Improve quality and refine your <br> content instantly for sharper, <br> cleaner results.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="3d-icon-edit-3d-illustration-3d-element-3d-rendering-graphic-elements-design-element_808921-673.jpg"
+                                alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Edit</h3>
+                            <p>Quickly modify and customize <br> your content br to suit your style <br> or needs.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="black-microphone-3d-render-professional-microphone_191095-84562.jpg"
+                                alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Video Lipsync</h3>
+                            <p>Automatically sync audio with <br> video for perfect lip movements <br> in real time.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="man-is-standing-doodle-style-isolated-white-background_9385-1617.jpg"
+                                alt="Video Icon">
+                        </div>
+                        <div class="item-text">
+                            <h3>Train</h3>
+                            <p>Teach the AI to recognize patterns <br> and improve results using <br> your own data.</p>
+                        </div>
+                    </div>
+                    <button class="generate-btn">Open</button>
+                   
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-img">
+                            <img src="train-metro-front-view-subway-locomotive_107791-2840.jpg" alt="Video Icon">
+                        </div>
+                    <div>
+
+                     <div class="item-text">
+                            <h3>Motion Transfer</h3>
+                            <p>Transfer movements from one <br> video or image to another for <br> realistic animation effects</p>
+                        </div>
+                         <button class="generate-btn">Open</button>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,464 @@
+/* ===== THEME VARIABLES ===== */
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --card-bg: #f1f5f9;
+    --btn-bg: #3b82f6;
+    --btn-text: #ffffff;
+
+}
+
+.dark {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --card-bg: #1e293b;
+    --btn-bg: #2563eb;
+    --btn-text: #ffffff;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 100;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    margin-left: 500px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-btn {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #999;
+}
+
+.icon-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.icon-btn:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* ===== CAROUSEL ===== */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 15px;
+    padding: 2rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+    gap: 0.3rem;
+}
+
+.card h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.card-left h2,
+.card-left p {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+.card-left .generate-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(236, 234, 234, 0.438);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    height: 50px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.btn {
+    margin-top: 1rem;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== CARD BACKGROUNDS ===== */
+.wan {
+    background-image: url("anime-style-group-boys-spending-time-together-enjoying-their-friendship_23-2151479335.jpg");
+}
+
+.flux {
+    background-image: url("vecteezy_ai-generated-cyborg-woman-in-dark-background-artificial_35973298 (2).jpg");
+}
+
+.other {
+    background-image: url("advanced-robotic-hand-stockcake.jpg");
+}
+
+.rob {
+    background-image: url("advanced-humanoid-robot-stockcake.jpg");
+}
+
+/* ===== GENERATE SECTION ===== */
+.generate {
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.gen {
+    margin-left: 100px;
+    text-decoration: underline;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.gen:hover {
+    opacity: 1;
+}
+
+.item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100px;
+    width: 250px;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-text {
+    flex: 1;
+}
+
+.item-text h3 {
+    margin: 0 0 0.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.item-text p {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
+.generate-btn {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 106px;
+    background-color: rgba(196, 188, 188, 0.26);
+    border: none;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Large tablets / small desktops */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        width: 200px;
+    }
+
+    .nav-links {
+        margin-left: 150px;
+        gap: 0.8rem;
+    }
+
+    .navbar-right {
+        margin-right: 20px;
+    }
+
+    .card h1 {
+        font-size: 70px;
+    }
+
+    .card-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-left p {
+        font-size: 0.9rem;
+    }
+
+    .card-left .generate-btn {
+        width: 130px;
+        height: 35px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Tablets / large phones */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 0 10px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .item-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .item-img img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .nav-links {
+        margin-left: 10px;
+        gap: 0.5rem;
+        padding: 3px;
+    }
+
+    .navbar-right {
+        margin-right: 10px;
+        gap: 0.5rem;
+    }
+
+    .card h1 {
+        font-size: 50px;
+    }
+
+    .card-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-left p {
+        font-size: 0.8rem;
+    }
+
+    .card-left .generate-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+        padding: 0 10px;
+    }
+
+    .item {
+        width: 100%;
+        padding: 0.4rem 0.8rem;
+        min-height: 90px;
+    }
+
+    .item-text h3 {
+        font-size: 0.8rem;
+    }
+
+    .item-text p {
+        font-size: 0.65rem;
+    }
+
+    .generate-btn {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .card h1 {
+        font-size: 40px;
+    }
+
+    .card-left h2 {
+        font-size: 1rem;
+    }
+
+    .card-left p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar { flex-direction: column; align-items: center; }
+    .nav-links { gap: 1rem; }
+    .navbar-right { justify-content: flex-start; width: 100%; margin-top: 0.5rem; }
+}
+
+@media (max-width: 767px) {
+    .nav-links { gap: 0.8rem; flex-wrap: wrap; }
+    .navbar-right { justify-content: flex-start; gap: 0.5rem; margin-bottom: 0.5rem, ; margin-left: 250px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .nav-links { gap: 0.6rem; padding: 3px; }
+    .navbar-right { gap: 0.4rem; margin-top: 1.4rem; text-align: center; }
+}
